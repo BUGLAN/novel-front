@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
- 
+
  Vue.use(Router)
 
-const Hello = () => import('../components/Hello.vue')
+const Header = () => import('../components/Header')
+const Index = () => import ('../components/Index')
 
 const routes = [
     {
-        path: '/index',
-        name: 'index',
-        component: Hello
+        path: '/',
+        name: 'root',
+        component: Header,
+        children: [
+            {
+                path: '/index',
+                name: 'index',
+                component: Index
+            }
+        ]
     }
 ]
 
