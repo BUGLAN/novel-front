@@ -11,13 +11,6 @@ const routes = [
         path: '/',
         name: 'root',
         component: Header,
-        children: [
-            {
-                path: '/index',
-                name: 'index',
-                component: Index
-            }
-        ]
     }
 ]
 
