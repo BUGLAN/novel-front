@@ -1,21 +1,20 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue";
+import Router from "vue-router";
 
- Vue.use(Router)
+Vue.use(Router);
 
-const Header = () => import('../components/Header')
-const Index = () => import ('../components/Index')
+const Header = () => import("../modules/index/component/header.vue");
 
 const routes = [
-    {
-        path: '/',
-        name: 'root',
-        component: Header,
-    }
-]
+  {
+    path: "/",
+    name: "root",
+    component: Header
+  }
+];
 
 const router = new Router({
-    routes
+  routes
 });
 
 export default router;
