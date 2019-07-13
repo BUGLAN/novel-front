@@ -1,10 +1,11 @@
 <template>
   <a-row class="row flex-center">
-    <a-col class="white flex-center title" :span="2"><span>彗星小说网</span></a-col>
+    彗星网
     <a-col class="nav-center" :span="20">
       <a-col class="nav-left white" :span="6">玄幻 玄幻 玄幻 玄幻</a-col>
-      <a-col :span="12" class="flex-center white">
-        图标<input type="text" value="hello world" />
+      <a-col :span="12" class="flex-center">
+        搜索书籍
+        <input type="text" value="hello world" />
       </a-col>
       <a-col class="nav-right white" :span="6">登陆 注册</a-col>
     </a-col>
@@ -50,5 +51,13 @@
 
 .white {
   color: azure;
+}
+
+.vertial-center {
+  position: flex;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
 }
 </style>
