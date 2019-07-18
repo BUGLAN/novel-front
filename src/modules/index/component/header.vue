@@ -1,63 +1,41 @@
 <template>
-  <a-row class="row flex-center">
-    彗星网
-    <a-col class="nav-center" :span="20">
-      <a-col class="nav-left white" :span="6">玄幻 玄幻 玄幻 玄幻</a-col>
-      <a-col :span="12" class="flex-center">
-        搜索书籍
-        <input type="text" value="hello world" />
+  <div class="header">
+    <a-row class="nav-header">
+      <a-col class="header-left" style="color: white;" :span="2">彗星小说网</a-col>
+      <a-col calss="header-center" style="color: white;" :span="12">
+        <input type="text" class="header-input" />
+        玄幻 奇幻 都市 科幻 日常
       </a-col>
-      <a-col class="nav-right white" :span="6">登陆 注册</a-col>
-    </a-col>
-    <a-col class="white" :span="2"></a-col>
-    <!-- <a-col class="nav-center" :span="2">hello world</a-col> -->
-  </a-row>
+      <a-col class="header-right" style="color: white;" :span="2" :offset="8">我的书架</a-col>
+    </a-row>
+  </div>
 </template>
 
-<style scoped>
-.title {
-  font-size: 15px;
-}
-.row {
+<style scope>
+.header-left {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.65);
-}
-.nav-center {
-  /* github color */
-  background-color: rgba(0, 0, 0, 0.65);
-
-  /* cetner */
-  display: flex;
-  justify-content: center;
-
-  /* margin */
-  padding: 12px;
-}
-
-.flex-center {
-  display: flex;
+  height: 32px;
+  text-align: center;
+  align-items: center;
   justify-content: center;
 }
-
-.nav-left {
+.header-right {
   display: flex;
-  justify-content: flex-start;
+  height: 32px;
+  text-align: center;
+  align-items: center;
+}
+.header {
+  background-color: #24282e;
+  height: 64px;
 }
 
-.nav-right {
-  display: flex;
-  justify-content: flex-end;
+.nav-header {
+  padding: 16px;
+  height: 32px;
 }
 
-.white {
-  color: azure;
-}
-
-.vertial-center {
-  position: flex;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 50%;
+.header-input {
+  height: 32px;
 }
 </style>
